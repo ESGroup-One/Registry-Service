@@ -13,7 +13,7 @@ public class RegistryService {
     @Autowired
     private RegistryRepository repository;
 
-    public StudentRegistry addMockStudent(StudentRegistry student) {
+    public StudentRegistry seed(StudentRegistry student) {
         return repository.save(student);
     }
 
